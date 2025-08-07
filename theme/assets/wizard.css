@@ -1,0 +1,85 @@
+/* wizard.css — Wizard styling for Steps 2–4 */
+.sw-step h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sw-global-progress {
+  width: 100%;
+  background: #eee;
+  height: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.sw-progress-fill {
+  width: 0;
+  height: 100%;
+  background: #007ace;
+  transition: width 0.3s ease;
+}
+
+.choice-group {
+  margin-bottom: 1.5rem;
+}
+.choice-group__legend {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+.choice-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.choice-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.choice-list__item input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.choice-list__desc {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.frame-swatch {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.frame-swatch--white  { background: #fff; }
+.frame-swatch--black  { background: #000; }
+.frame-swatch--dark_wood {
+  background: linear-gradient(45deg, #6b4f32, #402a19);
+}
+
+.sw-button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.sw-back { background: transparent; color: #333; }
+.sw-next { background: #007ace; color: #fff; }
+
+.form-error {
+  color: #c00;
+  margin-bottom: 1rem;
+}
+
+[role="radio"][aria-checked="true"] {
+  outline: 2px solid #007ace;
+}

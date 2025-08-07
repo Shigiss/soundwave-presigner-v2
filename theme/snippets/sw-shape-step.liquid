@@ -1,0 +1,19 @@
+<div class="sw-step sw-step-2">
+  <h2>{{ 'wizard.step2_heading' | t }}</h2>
+
+  <div class="sw-shape-group" role="radiogroup" aria-label="Shape options">
+    {% for shape in product.metafields.custom.shape.options %}
+      <button
+        type="button"
+        class="sw-shape-option"
+        data-shape="{{ shape }}"
+        role="radio"
+        aria-checked="false"
+      >
+        {{ shape | capitalize }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <button id="sw-back" class="sw-button sw-back">{{ 'wizard.back' | t }}</button>
+</div>
